@@ -7,6 +7,10 @@ import Toggle from "../components/Toggle";
 import DataFetching from "../components/DataFetching";
 import Counter from "../components/Couter";
 import Todo from "../components/Todo";
+import { NumberProvider } from "../context/NumberContext";
+import { SafeAreaView } from "react-native-safe-area-context";
+import RandomNumber from "../components/RandomNumber";
+import AddRandom from "../components/AddRandom";
 
 const Index = () => {
   return (
@@ -19,6 +23,15 @@ const Index = () => {
       {/* <DataFetching /> */}
       <Counter />
       <Todo />
+
+      <View>
+        <NumberProvider>
+          <SafeAreaView>
+            <RandomNumber />
+            <AddRandom />
+          </SafeAreaView>
+        </NumberProvider>
+      </View>
     </View>
   );
 };
