@@ -5,6 +5,8 @@ import ImageComponent from "../components/ImageComponent";
 import ParentComp from "../components/ParentComp";
 import Toggle from "../components/Toggle";
 import DataFetching from "../components/DataFetching";
+import Counter from "../components/Couter";
+import Todo from "../components/Todo";
 
 const Index = () => {
   return (
@@ -14,7 +16,9 @@ const Index = () => {
       {/* <ImageComponent /> */}
       {/* <ParentComp /> */}
       <Toggle />
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <Counter />
+      <Todo />
     </View>
   );
 };
