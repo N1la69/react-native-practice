@@ -12,6 +12,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import RandomNumber from "../components/RandomNumber";
 import AddRandom from "../components/AddRandom";
 
+import "../globals.css";
+
 const Index = () => {
   return (
     <View>

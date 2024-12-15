@@ -73,6 +73,7 @@ const Todo = () => {
         placeholder="Enter a Todo"
         value={input}
         onChangeText={setInput}
+        className="border border-gray-300 rounded px-2 py-1"
       />
 
       <Button title="Add Todo" onPress={handleAddTodo} />
@@ -81,10 +82,10 @@ const Todo = () => {
         data={state.todos}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <View>
-            <Text>{item.text}</Text>
+          <View className="flex justify-between items-center px-2">
+            <Text className="">{item.text}</Text>
             <TouchableOpacity onPress={() => handleRemoveTodo(item.id)}>
-              <Text>Remove</Text>
+              <Text className="text-red-500">Remove</Text>
             </TouchableOpacity>
           </View>
         )}
